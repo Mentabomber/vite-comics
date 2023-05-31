@@ -12,7 +12,7 @@ export default {
                 {
                    text: "COMICS",
                    url: "#",
-                   current: true
+                   current: false
                 },
                 {
                    text: "MOVIES",
@@ -80,7 +80,7 @@ export default {
             <div>
             
                 <ul>
-                    <li v-for="link in links">
+                    <li v-for="link in links" :class="link.current ? 'active' : ''" >
                         {{ link.text }}
                     </li>
                 </ul>
@@ -109,12 +109,13 @@ export default {
             li {
                 padding-right: 10px;
                 padding-bottom: 50px;
+                font-weight: bold;
                 
 
                 &.active,
                 &:hover{
                     color: rgb(13,110,253);
-                    border-bottom: 3px solid rgb(13,110,253);
+                    border-bottom: 4px solid rgb(13,110,253);
                                   }
             }
         }
