@@ -58,7 +58,7 @@ export default {
         }
     },
     methods: { 
-        getImmageURL: function(imgPath){
+        getImageURL: function(imgPath){
             return new URL (imgPath, import.meta.url).href;
         }
     }
@@ -73,14 +73,14 @@ export default {
         <nav>
             <!-- div logo -->
             <div>
-                <img :src="getImmageURL(`../assets/images/dc-logo.png`)" alt="logo-dc">
+                <img :src="getImageURL(`../assets/images/dc-logo.png`)" alt="logo-dc">
             </div>
 
             <!-- div lista navbar -->
             <div>
             
                 <ul>
-                    <li v-for="link in links" :class="link.current ? 'active' : ''" >
+                    <li v-for="link in links" :class="link.current ? 'active' : ''" @click="">
                         {{ link.text }}
                     </li>
                 </ul>
