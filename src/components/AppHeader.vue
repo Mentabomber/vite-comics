@@ -70,7 +70,7 @@ export default {
 
 <template>
     <header>
-        <nav>
+        <nav class="container">
             <!-- div logo -->
             <div>
                 <img :src="getImageURL(`../assets/images/dc-logo.png`)" alt="logo-dc">
@@ -90,13 +90,19 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    header nav {
+
+    header{
+        .container {
+            max-width: 1180px; margin: auto;
+        }
+        nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 150px;
-        border: 1px solid black;
     }
+    }
+
 
     div {
         ul {

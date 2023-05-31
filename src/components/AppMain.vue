@@ -9,7 +9,10 @@ export default {
 
 <template>
     <main>
-        <h1>io sono il main!!!</h1>
+        <div class="container">
+            <h1>io sono il main!!!</h1>
+        </div>
+       
     </main>
 </template>
 
@@ -18,6 +21,9 @@ export default {
         height: 100px;
         width: 100%;
         background-color: black;
+        .container {
+            max-width: 1180px; margin: auto;
+        }
 
         h1{
             color: white;
