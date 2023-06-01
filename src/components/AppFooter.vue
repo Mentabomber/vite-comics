@@ -89,7 +89,8 @@ export default {
             <section id="info-section">
                 <div class="container">
                     <div style="display: flex; justify-content: space-between; ">
-                        <div style="display: flex; flex-wrap: wrap; padding-right: 10px;"> 
+                        <div style="display: flex;  padding-right: 10px; position: relative; z-index: 1001;"> 
+
                             <ul v-for="ul in footerUlContent">
                                 <li>{{ ul.title }}</li>
                                 <li v-for="cnt in ul.contents"> <a href="">{{ cnt }}</a></li>
@@ -97,7 +98,7 @@ export default {
             
                         </div>
                         <div class="img-container">
-                            <img :src="getImageURL(`../assets/images/dc-logo-bg.png`)" alt="logo-dc-bg">
+                            <img id="background-img"  :src="getImageURL(`../assets/images/dc-logo-bg.png`)" alt="logo-dc-bg">
                         </div>
                     </div>
                 </div>
@@ -115,7 +116,7 @@ export default {
                             FOLLOW US
                         </span></li>
                             <li v-for="img in mediaImages">
-                                <img :src="img" alt="">
+                                <a href=""><img :src="img" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -128,11 +129,13 @@ export default {
 <style lang="scss" scoped>
 
     footer{
-        
+        position: relative;
         .container {
             max-width: 1180px; margin: auto;
         }
         #bonus-section{ 
+            position: relative;
+            z-index: 998;
             background-color: rgb(13,110,253);
             color: white;
             width: 100%;
@@ -160,10 +163,9 @@ export default {
             }
         }
         #info-section {
+
             padding: 40px 0;
-            background-image:   
-                                
-                                url("../assets/images/footer-bg.jpg");
+            background-image: url("../assets/images/footer-bg.jpg");
 
             background-size: cover;
             height: 300px;
@@ -192,6 +194,8 @@ export default {
         }
         }
         #media-section{
+            position: relative;
+            z-index: 999;
             button{
                 height: 50%;
                 border: 2px solid rgb(13,110,253);
@@ -231,7 +235,13 @@ export default {
             }
         }
     }
-
+    #background-img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        padding-left: 50%;
+    }
     
 
 </style>

@@ -10,7 +10,12 @@ export default {
 <template>
     <main>
         <div class="container">
-            <h1>io sono il main!!!</h1>
+            <!-- jumbotron  -->
+            <div id="jumbotron">
+
+            </div>
+
+            <!-- comics selection menu  -->
         </div>
        
     </main>
@@ -27,6 +32,10 @@ export default {
 
         h1{
             color: white;
+        }
+        #jumbotron{
+            background-image: url("..assets/images/jumbotron.jpg");
+            height: 300px;
         }
     }
 </style>

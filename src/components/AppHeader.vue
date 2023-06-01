@@ -12,7 +12,7 @@ export default {
                 {
                    text: "COMICS",
                    url: "#",
-                   current: false
+                   current: true
                 },
                 {
                    text: "MOVIES",
@@ -80,8 +80,8 @@ export default {
             <div>
             
                 <ul>
-                    <li v-for="link in links" :class="link.current ? 'active' : ''" @click="">
-                        {{ link.text }}
+                    <li v-for="(link, i) in links"  :key="i">
+                        <a :class="link.current ? 'active' : ''" :href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
             </div>
@@ -116,13 +116,21 @@ export default {
                 padding-right: 10px;
                 padding-bottom: 50px;
                 font-weight: bold;
-                
-
+                color: black;
                 &.active,
                 &:hover{
                     color: rgb(13,110,253);
-                    border-bottom: 4px solid rgb(13,110,253);
+                    
                                   }
+                a{
+                    text-decoration: none;
+                    &.active,
+                    &:hover{
+                    color: rgb(13,110,253);
+                    border-bottom: 4px solid rgb(13,110,253);
+                    padding-bottom: 50px;}
+                }
+
             }
         }
     }
