@@ -1,15 +1,5 @@
 <script>
-// import img1 from "../public/images/footer-facebook.png";
-// import img2 from "../public/images/footer-twitter.png";
-// import img3 from "../public/images/footer-youtube.png";
-// import img4 from "../public/images/footer-pinterest.png";
-// import img5 from "../public/images/footer-periscope.png";
 
-// import imgContent1 from "../public/images/buy-comics-digital-comics.png";
-// import imgContent2 from "../public/images/buy-comics-merchandise.png";
-// import imgContent3 from "../public/images/buy-comics-subscriptions.png";
-// import imgContent4 from "../public/images/buy-comics-shop-locator.png";
-// import imgContent5 from "../public/images/buy-dc-power-visa.svg";
 
 export default {
     name: "AppFooter",
@@ -18,23 +8,23 @@ export default {
             content:[
                 {
                     text: "DIGITAL COMICS",
-                    img: "buy-comics-digital-comics.png",
+                    img: "images/buy-comics-digital-comics.png",
                 },
                 {
                     text: "DC MERCHANDISE",
-                    img: "buy-comics-merchandise.png",
+                    img: "images/buy-comics-merchandise.png",
                 },
                 {
                     text: "SUBSCRIPTION",
-                    img: "buy-comics-subscriptions.png",
+                    img: "images/buy-comics-subscriptions.png",
                 },
                 {
                     text: "COMIC SHOP LOCATION",
-                    img: "buy-comics-shop-locator.png",
+                    img: "images/buy-comics-shop-locator.png",
                 },
                 {
                     text: "DC POWER VISA",
-                    img: "buy-dc-power-visa.svg",
+                    img: "images/buy-dc-power-visa.svg",
                 },
             ],
             footerUlContent: [
@@ -55,7 +45,7 @@ export default {
                     contents: ["DC", "MAD Magazine","DC Kids","DC Universe","DC Power Visa"]
                 }
             ],
-            mediaImages: [img1, img2, img3, img4, img5]
+            mediaImages: ["images/footer-facebook.png", "images/footer-twitter.png", "images/footer-youtube.png", "images/footer-pinterest.png", "images/footer-periscope.png"]
 
         }
     },
