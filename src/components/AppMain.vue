@@ -147,7 +147,7 @@ export default {
         #jumbotron-section{
             width: 100%;
             height: 300px;
-            background-image: url("../assets/images/jumbotron.jpg");
+            background-image: url("../public/images/jumbotron.jpg");
             background-size: cover;
         }
         #comics-menu{

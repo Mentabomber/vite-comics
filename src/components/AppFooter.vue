@@ -1,15 +1,15 @@
 <script>
-import img1 from "../assets/images/footer-facebook.png";
-import img2 from "../assets/images/footer-twitter.png";
-import img3 from "../assets/images/footer-youtube.png";
-import img4 from "../assets/images/footer-pinterest.png";
-import img5 from "../assets/images/footer-periscope.png";
+// import img1 from "../public/images/footer-facebook.png";
+// import img2 from "../public/images/footer-twitter.png";
+// import img3 from "../public/images/footer-youtube.png";
+// import img4 from "../public/images/footer-pinterest.png";
+// import img5 from "../public/images/footer-periscope.png";
 
-import imgContent1 from "../assets/images/buy-comics-digital-comics.png";
-import imgContent2 from "../assets/images/buy-comics-merchandise.png";
-import imgContent3 from "../assets/images/buy-comics-subscriptions.png";
-import imgContent4 from "../assets/images/buy-comics-shop-locator.png";
-import imgContent5 from "../assets/images/buy-dc-power-visa.svg";
+// import imgContent1 from "../public/images/buy-comics-digital-comics.png";
+// import imgContent2 from "../public/images/buy-comics-merchandise.png";
+// import imgContent3 from "../public/images/buy-comics-subscriptions.png";
+// import imgContent4 from "../public/images/buy-comics-shop-locator.png";
+// import imgContent5 from "../public/images/buy-dc-power-visa.svg";
 
 export default {
     name: "AppFooter",
@@ -18,23 +18,23 @@ export default {
             content:[
                 {
                     text: "DIGITAL COMICS",
-                    img: imgContent1,
+                    img: "buy-comics-digital-comics.png",
                 },
                 {
                     text: "DC MERCHANDISE",
-                    img: imgContent2,
+                    img: "buy-comics-merchandise.png",
                 },
                 {
                     text: "SUBSCRIPTION",
-                    img: imgContent3,
+                    img: "buy-comics-subscriptions.png",
                 },
                 {
                     text: "COMIC SHOP LOCATION",
-                    img: imgContent4,
+                    img: "buy-comics-shop-locator.png",
                 },
                 {
                     text: "DC POWER VISA",
-                    img: imgContent5,
+                    img: "buy-dc-power-visa.svg",
                 },
             ],
             footerUlContent: [
@@ -98,7 +98,7 @@ export default {
             
                         </div>
                         <div class="img-container">
-                            <img id="background-img"  :src="getImageURL(`../assets/images/dc-logo-bg.png`)" alt="logo-dc-bg">
+                            <img id="background-img"  :src="getImageURL(`../public/images/dc-logo-bg.png`)" alt="logo-dc-bg">
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ export default {
         #info-section {
 
             padding: 40px 0;
-            background-image: url("../assets/images/footer-bg.jpg");
+            background-image: url("../public/images/footer-bg.jpg");
 
             background-size: cover;
             height: 300px;
