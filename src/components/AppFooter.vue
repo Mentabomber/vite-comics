@@ -88,7 +88,7 @@ export default {
             
                         </div>
                         <div class="img-container">
-                            <img id="background-img"  :src="getImageURL(`../public/images/dc-logo-bg.png`)" alt="logo-dc-bg">
+                            <img id="background-img"  src="images/dc-logo-bg.png" alt="logo-dc-bg">
                         </div>
                     </div>
                 </div>

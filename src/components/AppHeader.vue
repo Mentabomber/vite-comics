@@ -73,7 +73,7 @@ export default {
         <nav class="container">
             <!-- div logo -->
             <div>
-                <img :src="getImageURL(`images/dc-logo.png`)" alt="logo-dc">
+                <img src="images/dc-logo.png" alt="logo-dc">
             </div>
 
             <!-- div lista navbar -->
